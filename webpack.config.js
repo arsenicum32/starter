@@ -11,10 +11,7 @@ var environments = {
       loaders: [
         {
           test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-          use: [{
-            loader: 'file-loader',
-            options: {}
-          }]
+          loader: 'file-loader'
         },
         {
           test: /\.css$/,
