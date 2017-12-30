@@ -17,6 +17,14 @@ var environments = {
           }]
         },
         {
+          test: /\.(eot|ttf|woff|woff2)$/,
+          loader: 'file-loader',
+        },
+        {
+          test: /\.css$/,
+          loader: 'style-loader!css-loader'
+        },
+        {
           test: /\.styl$/,
           loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!stylus-loader'
         },
