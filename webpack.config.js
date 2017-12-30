@@ -10,15 +10,11 @@ var environments = {
     module: {
       loaders: [
         {
-          test: /\.(png|jpg|gif|svg)$/,
+          test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
           use: [{
             loader: 'file-loader',
             options: {}
           }]
-        },
-        {
-          test: /\.(eot|ttf|woff|woff2)$/,
-          loader: 'file-loader',
         },
         {
           test: /\.css$/,
